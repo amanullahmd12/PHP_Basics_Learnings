@@ -19,12 +19,12 @@
        
             $fileExtension = strtolower(pathinfo($file["name"], PATHINFO_EXTENSION));
             if (!in_array($fileExtension, $allowedExtensions)) {
-                echo "Error: Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.<br>";
+                echo "Invalid File Extension<br>";
             }
 
             
             if ($file["size"] > $maxFileSize) {
-                echo "Error: File size exceeds the maximum limit of 2MB.<br>";
+                echo "Error: File size exceeds the maximum limit of 1MB.<br>";
             }
 
            
